@@ -5,7 +5,7 @@
 <br/>自定义控件，包含不规则的path动画
 <br/>主要技术：path路径动画，贝塞尔曲线画圆， matrix变换
 
-![gif图片](https://github.com/kuyu132/AcrossDemo/blob/master/show.gif)
+![gif图片](https://github.com/kuyu132/Demos/blob/master/show.gif)
 
 
 ## 指纹识别
