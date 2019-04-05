@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ScrollLinearLayout">
+        <attr name="content_view_id" format = "integer"/>
+        <attr name="blank_view_id" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="ScrollLinearLayout2">
+        <attr name="content_view_id2" format = "integer"/>
+        <attr name="blank_view_id2" format="integer"/>
+    </declare-styleable>
+
+</resources>

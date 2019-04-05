@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <com.kuyuzhiqi.acrossdemo.widget.SwitchView
+        android:id="@+id/switch_view"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_centerInParent="true"/>
+
+    <com.kuyuzhiqi.acrossdemo.widget.StatusView
+        android:id="@+id/status_view"
+        android:layout_width="140dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:layout_above="@+id/switch_view"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/outdate"
+        android:textColor="@android:color/white"
+        android:layout_below="@+id/switch_view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+</RelativeLayout>
