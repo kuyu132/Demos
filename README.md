@@ -12,6 +12,6 @@ API>23<br/>
 状态：未连接，连接中，已连接，断开中
 <br/>自定义控件，包含不规则的path动画
 <br/>主要技术：path路径动画，贝塞尔曲线画圆， matrix变换<br/>
-![gif图片](https://github.com/kuyu132/Demos/blob/master/show.gif)
+<img src="https://github.com/kuyu132/Demos/blob/master/show.gif" width="240">
 
 
