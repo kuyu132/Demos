@@ -6,7 +6,7 @@
 
 ## 指纹识别
 API>23
-![gif图片](https://github.com/kuyu132/Demos/blob/master/fingerprint_auth.gif)
+![gif图片](https://github.com/kuyu132/Demos/blob/master/fingerprint_auth.gif =360x640)
 
 ## Path Animation
 状态：未连接，连接中，已连接，断开中
