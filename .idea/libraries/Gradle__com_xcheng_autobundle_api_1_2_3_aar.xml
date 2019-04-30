@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.xcheng:autobundle-api:1.2.3@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/autobundle-api-1.2.3.aar/937aae87e3ab5db8f253d894300518d8/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/autobundle-api-1.2.3.aar/937aae87e3ab5db8f253d894300518d8/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.xcheng/autobundle-api/1.2.3/5a3c5026ae34849dd4dc82fd76896338a02b6b0e/autobundle-api-1.2.3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

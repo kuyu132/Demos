@@ -26,7 +26,7 @@
         <compilerSettings />
         <compilerArguments>
           <option name="destination" value="$MODULE_DIR$/build/tmp/kotlin-classes/debug" />
-          <option name="classpath" value="$USER_HOME$/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/a722fde252c34735286e6dfc83d1e460/jars/classes.jar:/Users/kuyuzhiqi/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/1f204fc99a9c5032d89b9345d6ee21a0/jars/classes.jar:/Users/kuyuzhiqi/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/28021d487f1c3614390bb1885e586e07/jars/classes.jar:/Users/kuyuzhiqi/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.2.41/7e34f009642702250bccd9e5255866f408962a05/kotlin-stdlib-1.2.41.jar:/Users/kuyuzhiqi/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.1.aar/43e59b507ef4b6d534c8fc2b2c452c42/jars/classes.jar:/Users/kuyuzhiqi/.gradle/caches/modules-2/files-2.1/com.google.dagger/dagger/2.16/a54ab49a739fd87e31be49c6179a0e9a135a7f39/dagger-2.16.jar:/Users/kuyuzhiqi/.gradle/caches/transforms-1/files-1.1/mmkv-1.0.10.aar/96e5d91586656c9d65bfc78297f37fa5/jars/classes.jar:/Users/kuyuzhiqi/.gradle/caches/transforms-1/files-1.1/BaseRecyclerViewAdapterHelper-2.9.34.aar/4feeff33a11b3f6c8dcb0cff9781c770/jars/classes.jar:/Users/kuyuzhiqi/.gradle/caches/transforms-1/files-1.1/support-dynamic-animation-27.1.1.aar/bf7c58aee1ca1b0f346a5f8527c4b4c0/jars/classes.jar:/Users/kuyuzhiqi/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/ac5c5a5410ef9950028dd28fb3d7efe3/jars/classes.jar:/Users/kuyuzhiqi/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/3d7118ecf544f3c09b1c4decfe875479/jars/classes.jar:/Users/kuyuzhiqi/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.1.1.aar/5f920be42fd54261e3aafc1920fc3c5e/jars/classes.jar:/Users/kuyuzhiqi/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/82e636faeb852a394abefefcd18c0fb9/jars/classes.jar:/Users/kuyuzhiqi/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/23c030fc68a9dad3a9c704ad2fb60108/jars/classes.jar:/Users/kuyuzhiqi/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/826e29a747948f080b44242bac0755d8/jars/classes.jar:/Users/kuyuzhiqi/.gradle/caches/transforms-1/files-1.1/transition-27.1.1.aar/12225ba333d01ffcdfd4c9fc629b864d/jars/classes.jar:/Users/kuyuzhiqi/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/1018f1734234ab9d243658fca101bb35/jars/classes.jar:/Users/kuyuzhiqi/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/9ff97c1c95823d00808350d563f9afe4/jars/classes.jar:/Users/kuyuzhiqi/.gradle/caches/modules-2/files-2.1/com.android.support/support-annotations/27.1.1/39ded76b5e1ce1c5b2688e1d25cdc20ecee32007/support-annotations-27.1.1.jar:/Users/kuyuzhiqi/.gradle/caches/modules-2/files-2.1/com.android.support.constraint/constraint-layout-solver/1.1.2/bfc967828daffc35ba01c9ee204d98b664930a0f/constraint-layout-solver-1.1.2.jar:/Users/kuyuzhiqi/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar:/Users/kuyuzhiqi/.gradle/caches/modules-2/files-2.1/javax.inject/javax.inject/1/6975da39a7040257bd51d21a231b76c915872d38/javax.inject-1.jar:/Users/kuyuzhiqi/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/cc5e68a6089585b716dc758ea4752dc7/jars/classes.jar:/Users/kuyuzhiqi/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/ecee979e60b496da553d7d5c85ea1fec/jars/classes.jar:/Users/kuyuzhiqi/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/de33dcd79969e04b3b93cb88b6f92e8b/jars/classes.jar:/Users/kuyuzhiqi/.gradle/caches/modules-2/files-2.1/android.arch.lifecycle/common/1.1.0/edf3f7bfb84a7521d0599efa3b0113a0ee90f85/common-1.1.0.jar:/Users/kuyuzhiqi/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/01a8ed8cb312a0486c3589d70b03b91d/jars/classes.jar:/Users/kuyuzhiqi/.gradle/caches/modules-2/files-2.1/android.arch.core/common/1.1.0/8007981f7d7540d89cd18471b8e5dcd2b4f99167/common-1.1.0.jar:/Users/kuyuzhiqi/Documents/android-sdk-macosx/platforms/android-27/android.jar" />
+          <option name="classpath" value="$USER_HOME$/.gradle/caches/transforms-1/files-1.1/alicloud-android-httpdns-1.2.5.aar/8a0b365bdc26391d4cbfd495e38c3a3c/jars/classes.jar:/Users/kuyuzhiqi/.gradle/caches/transforms-1/files-1.1/alicloud-android-push-3.1.4.aar/5521d8cacccc5eec0df2299924e17646/jars/classes.jar:/Users/kuyuzhiqi/.gradle/caches/transforms-1/files-1.1/alicloud-android-hotfix-3.2.8.aar/d819ba315519a939a67dc9bb6ec78705/jars/classes.jar:/Users/kuyuzhiqi/.gradle/caches/transforms-1/files-1.1/alicloud-android-man-1.2.4.aar/abe6311084f423e327fc8c9e9f76402e/jars/classes.jar:/Users/kuyuzhiqi/.gradle/caches/transforms-1/files-1.1/alicloud-android-man-1.2.4.aar/abe6311084f423e327fc8c9e9f76402e/jars/libs/alicloud-android-man-1.2.4.jar:/Users/kuyuzhiqi/.gradle/caches/transforms-1/files-1.1/alicloud-android-feedback-3.3.1.aar/14c301c1606ed0f2eb16f1c373d24ca1/jars/classes.jar:/Users/kuyuzhiqi/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/172aa244e92d18c9c3997d10b0d1ba42/jars/classes.jar:/Users/kuyuzhiqi/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/34751cd87ac223ed7cd9ef54421b3226/jars/classes.jar:/Users/kuyuzhiqi/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/b6881a91d468a30c3f89ffde2a2be762/jars/classes.jar:/Users/kuyuzhiqi/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.2.41/7e34f009642702250bccd9e5255866f408962a05/kotlin-stdlib-1.2.41.jar:/Users/kuyuzhiqi/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.1.aar/6d679d1afe9a90f29ad33450ba8c2356/jars/classes.jar:/Users/kuyuzhiqi/.gradle/caches/modules-2/files-2.1/com.google.dagger/dagger/2.16/a54ab49a739fd87e31be49c6179a0e9a135a7f39/dagger-2.16.jar:/Users/kuyuzhiqi/.gradle/caches/transforms-1/files-1.1/mmkv-1.0.10.aar/43b713e831909f07f98d82b0e62906b9/jars/classes.jar:/Users/kuyuzhiqi/.gradle/caches/transforms-1/files-1.1/BaseRecyclerViewAdapterHelper-2.9.34.aar/ad1eb494b23a80949a12e9f9ce89eb22/jars/classes.jar:/Users/kuyuzhiqi/.gradle/caches/transforms-1/files-1.1/support-dynamic-animation-27.1.1.aar/29f878d60f48dea5883f3c84f288d3e9/jars/classes.jar:/Users/kuyuzhiqi/.gradle/caches/transforms-1/files-1.1/autobundle-api-1.2.3.aar/937aae87e3ab5db8f253d894300518d8/jars/classes.jar:/Users/kuyuzhiqi/.gradle/caches/modules-2/files-2.1/com.aliyun.ams/alicloud-android-utils/1.1.3/3891ba3f096bf9dccf95bb13bac19ad6ddbed4c8/alicloud-android-utils-1.1.3.jar:/Users/kuyuzhiqi/.gradle/caches/modules-2/files-2.1/com.aliyun.ams/alicloud-android-beacon/1.0.1/685d68c2dc7de48430eb80d1a470773cc9cde6b1/alicloud-android-beacon-1.0.1.jar:/Users/kuyuzhiqi/.gradle/caches/modules-2/files-2.1/com.aliyun.ams/alicloud-android-ut/5.4.0/d0dc04a92cf401c8d222195cee892d6bafe15314/alicloud-android-ut-5.4.0.jar:/Users/kuyuzhiqi/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/a7ab271dc79b947f2aba8851af27c13c/jars/classes.jar:/Users/kuyuzhiqi/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/73ed8d521c76249d6f73730838b4d629/jars/classes.jar:/Users/kuyuzhiqi/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.1.1.aar/3b73612468bd2b16cd73187fc1ef9a04/jars/classes.jar:/Users/kuyuzhiqi/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/da8876c957acf4a22c0c3b5ec8aed17c/jars/classes.jar:/Users/kuyuzhiqi/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/e78dc4a7b6e2749a3d9090b489a5e86e/jars/classes.jar:/Users/kuyuzhiqi/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/34f4df3693587dbe3919988d3c00c6b1/jars/classes.jar:/Users/kuyuzhiqi/.gradle/caches/transforms-1/files-1.1/transition-27.1.1.aar/f1d4f23f69236435d060c26830731fc0/jars/classes.jar:/Users/kuyuzhiqi/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/d0910d07eb35b68548e92a518d2ba1cc/jars/classes.jar:/Users/kuyuzhiqi/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/7aeeb5c1f257fb0964a88bb26cd7bb63/jars/classes.jar:/Users/kuyuzhiqi/.gradle/caches/modules-2/files-2.1/com.android.support/support-annotations/27.1.1/39ded76b5e1ce1c5b2688e1d25cdc20ecee32007/support-annotations-27.1.1.jar:/Users/kuyuzhiqi/.gradle/caches/modules-2/files-2.1/com.android.support.constraint/constraint-layout-solver/1.1.2/bfc967828daffc35ba01c9ee204d98b664930a0f/constraint-layout-solver-1.1.2.jar:/Users/kuyuzhiqi/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar:/Users/kuyuzhiqi/.gradle/caches/modules-2/files-2.1/javax.inject/javax.inject/1/6975da39a7040257bd51d21a231b76c915872d38/javax.inject-1.jar:/Users/kuyuzhiqi/.gradle/caches/modules-2/files-2.1/com.xcheng/autobundle-annotation/1.2.3/a13c6199f1e6dfeebc3fa52491f8aad4893cb926/autobundle-annotation-1.2.3.jar:/Users/kuyuzhiqi/.gradle/caches/modules-2/files-2.1/com.aliyun.ams/alicloud-android-utdid/1.1.5.3/989c3bb13060da1e3154bfe00236f76453a2725f/alicloud-android-utdid-1.1.5.3.jar:/Users/kuyuzhiqi/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/3dd3a3ba34320696e937102199ffcac4/jars/classes.jar:/Users/kuyuzhiqi/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/c6ca3db81254f16b3f50c3b6cc72061e/jars/classes.jar:/Users/kuyuzhiqi/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/693d9da964ff4907b3adb742c8a808ee/jars/classes.jar:/Users/kuyuzhiqi/.gradle/caches/modules-2/files-2.1/android.arch.lifecycle/common/1.1.0/edf3f7bfb84a7521d0599efa3b0113a0ee90f85/common-1.1.0.jar:/Users/kuyuzhiqi/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/0e307510732fb0c6621ccfdec38c35c1/jars/classes.jar:/Users/kuyuzhiqi/.gradle/caches/modules-2/files-2.1/android.arch.core/common/1.1.0/8007981f7d7540d89cd18471b8e5dcd2b4f99167/common-1.1.0.jar:/Users/kuyuzhiqi/Documents/android-sdk-macosx/platforms/android-27/android.jar" />
           <option name="noStdlib" value="true" />
           <option name="noReflect" value="true" />
           <option name="moduleName" value="app_debug" />
@@ -63,6 +63,7 @@
       <sourceFolder url="file://$MODULE_DIR$/build/generated/source/aidl/debug" isTestSource="false" generated="true" />
       <sourceFolder url="file://$MODULE_DIR$/build/generated/source/buildConfig/debug" isTestSource="false" generated="true" />
       <sourceFolder url="file://$MODULE_DIR$/build/generated/source/rs/debug" isTestSource="false" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/build/generated/res/emas-services/debug" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/build/generated/res/rs/debug" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/build/generated/res/resValues/debug" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/build/generated/source/apt/androidTest/debug" isTestSource="true" generated="true" />
@@ -124,7 +125,6 @@
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/incremental" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/javaPrecompile" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/jniLibs" />
-      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/lint" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/manifests" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/prebuild" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/res" />
@@ -139,18 +139,13 @@
     </content>
     <orderEntry type="jdk" jdkName="Android API 27 Platform" jdkType="Android SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Gradle: com.aliyun.ams:alicloud-android-httpdns:1.2.5@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:recyclerview-v7:27.1.1@aar" level="project" />
-    <orderEntry type="library" name="Gradle: com.android.support:support-vector-drawable:27.1.1@aar" level="project" />
-    <orderEntry type="library" name="Gradle: com.android.support:support-dynamic-animation:27.1.1@aar" level="project" />
-    <orderEntry type="library" name="Gradle: com.android.support:support-core-utils:27.1.1@aar" level="project" />
     <orderEntry type="library" name="Gradle: android.arch.lifecycle:livedata-core:1.1.0@aar" level="project" />
-    <orderEntry type="library" name="Gradle: com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.34@aar" level="project" />
     <orderEntry type="library" name="Gradle: android.arch.lifecycle:runtime:1.1.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:transition:27.1.1@aar" level="project" />
     <orderEntry type="library" name="Gradle: android.arch.lifecycle:common:1.1.0@jar" level="project" />
-    <orderEntry type="library" name="Gradle: com.android.support:support-annotations:27.1.1@jar" level="project" />
     <orderEntry type="library" name="Gradle: android.arch.lifecycle:viewmodel:1.1.0@aar" level="project" />
-    <orderEntry type="library" name="Gradle: com.android.support.constraint:constraint-layout:1.1.2@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.android.support.test.espresso:espresso-idling-resource:3.0.2@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:support-v4:27.1.1@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.android.support.test:runner:1.0.2@aar" level="project" />
@@ -159,24 +154,40 @@
     <orderEntry type="library" scope="TEST" name="Gradle: com.squareup:javawriter:2.1.1@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:animated-vector-drawable:27.1.1@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.android.support.test.espresso:espresso-core:3.0.2@aar" level="project" />
-    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.2.41@jar" level="project" />
+    <orderEntry type="library" name="Gradle: com.aliyun.ams:alicloud-android-beacon:1.0.1@jar" level="project" />
     <orderEntry type="library" name="Gradle: org.jetbrains:annotations:13.0@jar" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: com.google.code.findbugs:jsr305:2.0.1@jar" level="project" />
     <orderEntry type="library" name="Gradle: javax.inject:javax.inject:1@jar" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: junit:junit:4.12@jar" level="project" />
+    <orderEntry type="library" name="Gradle: com.aliyun.ams:alicloud-android-push:3.1.4@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:support-core-ui:27.1.1@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.android.support.constraint:constraint-layout-solver:1.1.2@jar" level="project" />
+    <orderEntry type="library" name="Gradle: com.aliyun.ams:alicloud-android-utils:1.1.3@jar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.android.support.test:monitor:1.0.2@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.dagger:dagger:2.16@jar" level="project" />
+    <orderEntry type="library" name="Gradle: com.android.support:appcompat-v7:27.1.1@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.aliyun.ams:alicloud-android-hotfix:3.2.8@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.aliyun.ams:alicloud-android-feedback:3.3.1@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: net.sf.kxml:kxml2:2.3.0@jar" level="project" />
+    <orderEntry type="library" name="Gradle: com.xcheng:autobundle-api:1.2.3@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.android.support:support-vector-drawable:27.1.1@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.android.support:support-dynamic-animation:27.1.1@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.android.support:support-core-utils:27.1.1@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.34@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.android.support:support-annotations:27.1.1@jar" level="project" />
+    <orderEntry type="library" name="Gradle: com.aliyun.ams:alicloud-android-utdid:1.1.5.3@jar" level="project" />
+    <orderEntry type="library" name="Gradle: com.android.support.constraint:constraint-layout:1.1.2@aar" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.2.41@jar" level="project" />
+    <orderEntry type="library" name="Gradle: com.aliyun.ams:alicloud-android-man:1.2.4@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.google.code.findbugs:jsr305:2.0.1@jar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: junit:junit:4.12@jar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: org.hamcrest:hamcrest-core:1.3@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:support-compat:27.1.1@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:support-media-compat:27.1.1@aar" level="project" />
-    <orderEntry type="library" name="Gradle: com.android.support.constraint:constraint-layout-solver:1.1.2@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:support-fragment:27.1.1@aar" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: com.android.support.test:monitor:1.0.2@aar" level="project" />
-    <orderEntry type="library" name="Gradle: com.google.dagger:dagger:2.16@jar" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: org.hamcrest:hamcrest-library:1.3@jar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: org.hamcrest:hamcrest-integration:1.3@jar" level="project" />
-    <orderEntry type="library" name="Gradle: com.android.support:appcompat-v7:27.1.1@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.hamcrest:hamcrest-library:1.3@jar" level="project" />
+    <orderEntry type="library" name="Gradle: com.aliyun.ams:alicloud-android-ut:5.4.0@jar" level="project" />
     <orderEntry type="library" name="Gradle: android.arch.core:common:1.1.0@jar" level="project" />
+    <orderEntry type="library" name="Gradle: com.xcheng:autobundle-annotation:1.2.3@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.tencent:mmkv:1.0.10@aar" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: net.sf.kxml:kxml2:2.3.0@jar" level="project" />
   </component>
 </module>

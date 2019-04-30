@@ -1,8 +1,11 @@
 package com.kuyuzhiqi.testdemo.ui.activity;
 
+import android.content.ComponentName;
 import android.content.Intent;
+import android.content.ServiceConnection;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.IBinder;
 import android.support.annotation.Nullable;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -15,11 +18,13 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
 import android.widget.Toast;
+import autobundle.AutoBundle;
 import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.chad.library.adapter.base.BaseViewHolder;
 import com.chad.library.adapter.base.listener.SimpleClickListener;
 import com.kuyuzhiqi.acrossdemo.ui.FingerPrintActivity;
 import com.kuyuzhiqi.testdemo.R;
+import com.kuyuzhiqi.testdemo.bundle.CommonBundleService;
 import com.tencent.mmkv.MMKV;
 import java.util.ArrayList;
 import java.util.List;
@@ -58,6 +63,8 @@ public class MainActivity extends AppCompatActivity {
         contentList.add("吸顶滑动tab");
         contentList.add("指纹识别");
         contentList.add("Path Animation");
+        contentList.add("Auto Bundle测试");
+        contentList.add("Messenger");
         mContentAdapter = new ContentAdapter(contentList);
         rc_content.setAdapter(mContentAdapter);
         rc_content.setLayoutManager(new LinearLayoutManager(this));
@@ -84,6 +91,16 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case 6:
                         startActivity(new Intent(MainActivity.this, PathAnimationActivity.class));
+                        break;
+                    case 7:
+                        Bundle bunlde0 = AutoBundle.getDefault().create(CommonBundleService.class)
+                                .getLogin("JackWharton", "123456");
+                        Intent intentTmp = new Intent(MainActivity.this, AutoBundleResultActivity.class);
+                        intentTmp.putExtras(bunlde0);
+                        startActivity(intentTmp);
+                        break;
+                    case 8:
+                        startActivity(new Intent(MainActivity.this, MessengerActivity.class));
                         break;
                 }
             }
@@ -139,4 +156,8 @@ public class MainActivity extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
+
+
+
 }
