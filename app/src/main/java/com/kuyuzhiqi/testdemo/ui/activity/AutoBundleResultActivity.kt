@@ -1,14 +1,14 @@
 package com.kuyuzhiqi.testdemo.ui.activity
 
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import autobundle.annotation.Required
-import autobundle.annotation.Unbox
-import com.kuyuzhiqi.testdemo.R
 import android.os.Parcelable
 import android.util.SparseArray
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import autobundle.AutoBundle
+import autobundle.annotation.Required
+import autobundle.annotation.Unbox
+import com.kuyuzhiqi.testdemo.R
 
 class AutoBundleResultActivity : AppCompatActivity() {
 

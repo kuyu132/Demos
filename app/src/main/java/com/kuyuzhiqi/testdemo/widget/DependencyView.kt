@@ -1,10 +1,10 @@
 package com.kuyuzhiqi.testdemo.widget
 
 import android.content.Context
-import android.support.design.widget.CoordinatorLayout
 import android.util.AttributeSet
 import android.view.MotionEvent
 import android.widget.Button
+import androidx.coordinatorlayout.widget.CoordinatorLayout
 
 class DependencyView(context: Context, attrs: AttributeSet?) : Button(context, attrs) {
     var lastX = 0

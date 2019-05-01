@@ -2,13 +2,13 @@ package com.kuyuzhiqi.testdemo.ui.activity
 
 import android.os.Bundle
 import android.os.Handler
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import com.kuyuzhiqi.testdemo.R
 import com.kuyuzhiqi.testdemo.Status
 import kotlinx.android.synthetic.main.activity_path_animation.status_view
 import kotlinx.android.synthetic.main.activity_path_animation.switch_view
 
-class PathAnimationActivity:AppCompatActivity() {
+class PathAnimationActivity: AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_path_animation)

@@ -1,16 +1,16 @@
 package com.kuyuzhiqi.testdemo.ui.activity
 
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
-import android.support.v7.widget.LinearLayoutManager
 import android.view.View
 import android.widget.LinearLayout
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.chad.library.adapter.base.BaseQuickAdapter
 import com.chad.library.adapter.base.BaseViewHolder
 import com.chad.library.adapter.base.listener.OnItemClickListener
-import com.kuyuzhiqi.testdemo.utils.DisplayUtils
 import com.kuyuzhiqi.testdemo.R
+import com.kuyuzhiqi.testdemo.utils.DisplayUtils
 import kotlinx.android.synthetic.main.activity_scroll.rc
 import kotlinx.android.synthetic.main.activity_scroll.sll
 import kotlinx.android.synthetic.main.activity_scroll.v_blank

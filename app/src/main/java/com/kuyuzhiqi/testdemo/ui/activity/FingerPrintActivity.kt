@@ -5,17 +5,17 @@ import android.os.Build
 import android.os.Bundle
 import android.security.keystore.KeyGenParameterSpec
 import android.security.keystore.KeyProperties
-import android.support.annotation.RequiresApi
-import android.support.v4.hardware.fingerprint.FingerprintManagerCompat
-import android.support.v4.os.CancellationSignal
-import android.support.v7.app.AppCompatActivity
 import android.widget.Toast
+import androidx.annotation.RequiresApi
+import androidx.appcompat.app.AppCompatActivity
+import androidx.core.hardware.fingerprint.FingerprintManagerCompat
+import androidx.core.os.CancellationSignal
 import com.kuyuzhiqi.testdemo.R
-import kotlinx.android.synthetic.main.activity_fingerprint.*
+import kotlinx.android.synthetic.main.activity_fingerprint.iv_indicator
+import kotlinx.android.synthetic.main.activity_fingerprint.tv_status
 import java.security.KeyStore
 import javax.crypto.Cipher
 import javax.crypto.KeyGenerator
-
 
 class FingerPrintActivity : AppCompatActivity() {
 

@@ -5,10 +5,10 @@ import android.content.Context
 import android.content.Intent
 import android.content.ServiceConnection
 import android.os.*
-import android.support.v7.app.AppCompatActivity
 import android.text.TextUtils
 import android.util.Log
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import com.kuyuzhiqi.testdemo.MSG_FROM_CLIENT
 import com.kuyuzhiqi.testdemo.MSG_FROM_SERVER
 import com.kuyuzhiqi.testdemo.R

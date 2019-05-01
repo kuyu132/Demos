@@ -6,8 +6,6 @@ import android.animation.ObjectAnimator;
 import android.animation.ValueAnimator;
 import android.content.Context;
 import android.content.res.TypedArray;
-import android.support.annotation.Nullable;
-import android.support.v7.widget.RecyclerView;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.MotionEvent;
@@ -17,8 +15,9 @@ import android.view.ViewConfiguration;
 import android.view.ViewGroup;
 import android.widget.AbsListView;
 import android.widget.LinearLayout;
-import com.kuyuzhiqi.testdemo.utils.DisplayUtils;
+import androidx.recyclerview.widget.RecyclerView;
 import com.kuyuzhiqi.testdemo.R;
+import com.kuyuzhiqi.testdemo.utils.DisplayUtils;
 
 public class ScrollLinearLayout extends LinearLayout {
 
@@ -49,7 +48,7 @@ public class ScrollLinearLayout extends LinearLayout {
 
 
 
-    public ScrollLinearLayout(Context context, @Nullable AttributeSet attrs) {
+    public ScrollLinearLayout(Context context, AttributeSet attrs) {
         super(context, attrs);
         ViewConfiguration configuration = ViewConfiguration.get(context);
         mTouchSlop = configuration.getScaledTouchSlop();

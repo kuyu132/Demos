@@ -4,11 +4,11 @@ import android.content.ComponentName
 import android.content.Context
 import android.content.Intent
 import android.content.ServiceConnection
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.os.IBinder
 import android.widget.Button
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import com.kuyuzhiqi.testdemo.IBankAIDL
 import com.kuyuzhiqi.testdemo.R
 import com.kuyuzhiqi.testdemo.service.BankService

@@ -23,7 +23,7 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <android.support.v4.app.FragmentTabHost
+            <androidx.core.app.FragmentTabHost
                 android:id="@android:id/tabhost"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
@@ -32,7 +32,7 @@
                     android:layout_width="0dp"
                     android:layout_height="0dp"
                     android:layout_weight="0"/>
-            </android.support.v4.app.FragmentTabHost>
+            </androidx.core.app.FragmentTabHost>
 
             <FrameLayout
                 android:id="@+id/realtabcontent"
