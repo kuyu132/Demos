@@ -14,15 +14,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.activity.JetpackDemoActivity">
+        <activity android:name=".ui.activity.SVGAActivity">
         </activity>
-        <activity android:name=".ui.activity.MessengerActivity">
-        </activity>
-        <activity android:name=".ui.activity.AutoBundleResultActivity">
-        </activity>
-        <activity android:name=".ui.activity.ScrollTabActivity2">
-        </activity>
-        <activity android:name=".ui.activity.ScrollActivity">
+        <activity android:name=".ui.activity.JsonActivity">
         </activity>
         <activity
             android:name=".ui.activity.MainActivity"
@@ -33,6 +27,16 @@
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
+        </activity>
+        <activity android:name=".ui.activity.JetpackDemoActivity">
+        </activity>
+        <activity android:name=".ui.activity.MessengerActivity">
+        </activity>
+        <activity android:name=".ui.activity.AutoBundleResultActivity">
+        </activity>
+        <activity android:name=".ui.activity.ScrollTabActivity2">
+        </activity>
+        <activity android:name=".ui.activity.ScrollActivity">
         </activity>
         <activity android:name=".ui.activity.CoordinatorActivity">
         </activity>
