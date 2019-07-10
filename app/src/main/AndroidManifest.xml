@@ -14,6 +14,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".ui.activity.LottieActivity">
+        </activity>
+        <activity android:name=".ui.activity.GifActivity">
+        </activity>
+        <activity android:name=".ui.activity.CarrouselActivity">
+        </activity>
         <activity android:name=".ui.activity.SVGAActivity">
         </activity>
         <activity android:name=".ui.activity.JsonActivity">

@@ -53,6 +53,9 @@ class MainActivity : AppCompatActivity() {
                     add("Messenger")
                     add("json读取")
                     add("SVGA动画")
+                    add("旋转控件")
+                    add("Gif")
+                    add("lottie animation")
                 }
 
         mContentAdapter = ContentAdapter(contentList)
@@ -76,8 +79,11 @@ class MainActivity : AppCompatActivity() {
                         startActivity(intentTmp)
                     }
                     8 -> startActivity(Intent(this@MainActivity, MessengerActivity::class.java))
-                    9-> startActivity(Intent(this@MainActivity, JsonActivity::class.java))
-                    10->startActivity(Intent(this@MainActivity, SVGAActivity::class.java))
+                    9 -> startActivity(Intent(this@MainActivity, JsonActivity::class.java))
+                    10 -> startActivity(Intent(this@MainActivity, SVGAActivity::class.java))
+                    11 -> startActivity(Intent(this@MainActivity, CarrouselActivity::class.java))
+                    12 -> startActivity(Intent(this@MainActivity, GifActivity::class.java))
+                    13 -> startActivity(Intent(this@MainActivity, LottieActivity::class.java))
                 }
             }
 
