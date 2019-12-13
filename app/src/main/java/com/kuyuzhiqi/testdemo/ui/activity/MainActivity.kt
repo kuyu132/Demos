@@ -11,16 +11,14 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import autobundle.AutoBundle
 import com.chad.library.adapter.base.BaseQuickAdapter
 import com.chad.library.adapter.base.BaseViewHolder
 import com.chad.library.adapter.base.listener.SimpleClickListener
 import com.kuyuzhiqi.acrossdemo.ui.FingerPrintActivity
 import com.kuyuzhiqi.testdemo.R
-import com.kuyuzhiqi.testdemo.bundle.CommonBundleService
 import com.tencent.mmkv.MMKV
 import org.androidannotations.annotations.EActivity
-import java.util.ArrayList
+import java.util.*
 
 @EActivity
 class MainActivity : AppCompatActivity() {
@@ -49,7 +47,6 @@ class MainActivity : AppCompatActivity() {
                     add("吸顶滑动tab")
                     add("指纹识别")
                     add("Path Animation")
-                    add("Auto Bundle测试")
                     add("Messenger")
                     add("json读取")
                     add("SVGA动画")
@@ -71,19 +68,12 @@ class MainActivity : AppCompatActivity() {
                     4 -> startActivity(Intent(this@MainActivity, ScrollTabActivity2::class.java))
                     5 -> startActivity(Intent(this@MainActivity, FingerPrintActivity::class.java))
                     6 -> startActivity(Intent(this@MainActivity, PathAnimationActivity::class.java))
-                    7 -> {
-                        val bunlde0 = AutoBundle.getDefault().create(CommonBundleService::class.java)
-                                .getLogin("JackWharton", "123456")
-                        val intentTmp = Intent(this@MainActivity, AutoBundleResultActivity::class.java)
-                        intentTmp.putExtras(bunlde0)
-                        startActivity(intentTmp)
-                    }
-                    8 -> startActivity(Intent(this@MainActivity, MessengerActivity::class.java))
-                    9 -> startActivity(Intent(this@MainActivity, JsonActivity::class.java))
-                    10 -> startActivity(Intent(this@MainActivity, SVGAActivity::class.java))
-                    11 -> startActivity(Intent(this@MainActivity, CarrouselActivity::class.java))
-                    12 -> startActivity(Intent(this@MainActivity, GifActivity::class.java))
-                    13 -> startActivity(Intent(this@MainActivity, LottieActivity::class.java))
+                    7 -> startActivity(Intent(this@MainActivity, MessengerActivity::class.java))
+                    8 -> startActivity(Intent(this@MainActivity, JsonActivity::class.java))
+                    9 -> startActivity(Intent(this@MainActivity, SVGAActivity::class.java))
+                    10 -> startActivity(Intent(this@MainActivity, CarrouselActivity::class.java))
+                    11 -> startActivity(Intent(this@MainActivity, GifActivity::class.java))
+                    12 -> startActivity(Intent(this@MainActivity, LottieActivity::class.java))
                 }
             }
 

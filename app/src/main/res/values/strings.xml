@@ -10,4 +10,13 @@
     <string name="status_connected">已连接</string>
     <string name="status_disconntecting">断开中</string>
     <string name="outdate">2017-8-21 到期</string>
+    <!-- Rewards Rules提现规则-->
+    <string name="withdraw_second_tips">
+أنظمة السحب:
+\n1. ممكن السحب بعد العملة الذهبية أكثر من %s،ولا أكثر من 1050000.
+\n2. %s عملة باعتبارها وديعة علي سحب الانظمة الرسمية.
+\n3. السحب مرة أسبوعيا فقط.
+\n4. السحب يحتاج إلي الموافقة، وحول10-20 يوم إلي حسابك.
+    </string>
+
 </resources>

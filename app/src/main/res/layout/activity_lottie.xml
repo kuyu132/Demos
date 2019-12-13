@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<androidx.core.widget.NestedScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -7,12 +7,31 @@
     android:layout_height="match_parent"
     tools:context=".ui.activity.LottieActivity">
 
-    <com.airbnb.lottie.LottieAnimationView
-        android:id="@+id/lottie_view"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lottie_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.kuyuzhiqi.testdemo.widget.JustifyTextView
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:text="您可以使用以下步骤安全地删除主规格库：首先，编辑Podfile以将CDN设置为主要来源：- source 'https://github.com/CocoaPods/Specs.git'+ source 'https://cdn.cocoapods.org/'复制代码然后，运行以下命令将其从托管存储库列表中删除：pod repo remove master复制代码注意：如果您希望继续使用基于git的源，则必须确保通过源DSL在Podfile中明确指定它，否则CocoaPods将自动使用CDN进行依赖性解析。"/>
+
+        <com.kuyuzhiqi.testdemo.widget.JustifyTextView
+            android:id="@+id/tv_name"
+            android:layout_width="187dp"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:visibility="gone"
+            android:text="Nearly 700 workers from seven agricultural processing plants were arrested for allegedly not having proper documentation to be in the US.The raids sparked condemnation from Democrats as stories emerged of children separated from their parents.Officials say they took steps to ensure any children were properly cared for.Immigration and Customs Enforcement (ICE) said approximately 680 removable aliens had been detained during the operation, which saw agents arriving in buses to questionanarresworkers at the plants.President Donald Trump had announced an immigration crackdown in June, saying millions of illegal aliens who [had] found their way into the US would be removed.What did ICE say?"/>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

@@ -46,8 +46,8 @@ dependencies {
     implementation 'com.tencent:mmkv:1.0.10'
     implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.34'
     implementation 'androidx.dynamicanimation:dynamicanimation:1.0.0-beta01'
-    implementation 'com.xcheng:autobundle-api:1.2.3'
-    annotationProcessor 'com.xcheng:autobundle-compiler:1.2.3'
+//    implementation 'com.xcheng:autobundle-api:1.2.3'
+//    annotationProcessor 'com.xcheng:autobundle-compiler:1.2.3'
     implementation 'com.google.code.gson:gson:2.8.5'
     annotationProcessor "org.androidannotations:androidannotations:4.6.0"
     implementation "org.androidannotations:androidannotations-api:4.6.0"
