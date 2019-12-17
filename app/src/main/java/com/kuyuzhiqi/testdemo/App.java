@@ -1,14 +1,21 @@
 package com.kuyuzhiqi.testdemo;
 
 import android.app.Application;
-import android.content.Context;
-import android.view.View;
-import android.widget.Toast;
 
 public class App extends Application {
 
     public static MsgDisplayListener msgDisplayListener = null;
     public static StringBuilder cacheMsg = new StringBuilder();
+
+    //public App() {
+    //    super(
+    //            //tinkerFlags, which types is supported
+    //            //dex only, library only, all support
+    //            ShareConstants.TINKER_ENABLE_ALL,
+    //            // This is passed as a string so the shell application does not
+    //            // have a binary dependency on your ApplicationLifeCycle class.
+    //            "com.kuyuzhiqi.testdemo.App");
+    //}
 
     //hotfix init need attr
     public interface MsgDisplayListener {
