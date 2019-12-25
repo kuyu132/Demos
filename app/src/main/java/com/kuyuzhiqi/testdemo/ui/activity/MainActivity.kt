@@ -17,6 +17,7 @@ import com.chad.library.adapter.base.listener.SimpleClickListener
 import com.kuyuzhiqi.acrossdemo.ui.FingerPrintActivity
 import com.kuyuzhiqi.testdemo.R
 import com.tencent.mmkv.MMKV
+import io.flutter.embedding.android.FlutterActivity
 import org.androidannotations.annotations.EActivity
 import java.util.*
 
@@ -53,6 +54,8 @@ class MainActivity : AppCompatActivity() {
                     add("旋转控件")
                     add("Gif")
                     add("lottie animation")
+                    add("跳转flutter默认界面")
+                    add("在Android界面中加flutter view")
                 }
 
         mContentAdapter = ContentAdapter(contentList)
@@ -74,18 +77,23 @@ class MainActivity : AppCompatActivity() {
                     10 -> startActivity(Intent(this@MainActivity, CarrouselActivity::class.java))
                     11 -> startActivity(Intent(this@MainActivity, GifActivity::class.java))
                     12 -> startActivity(Intent(this@MainActivity, LottieActivity::class.java))
+                    13 -> startActivity(FlutterActivity.createDefaultIntent(this@MainActivity))
+                    14 -> startActivity(Intent(this@MainActivity, FlutterViewActivity::class.java))
                 }
             }
 
-            override fun onItemLongClick(adapter: BaseQuickAdapter<*, *>, view: View, position: Int) {
+            override fun onItemLongClick(adapter: BaseQuickAdapter<*, *>, view: View,
+                    position: Int) {
 
             }
 
-            override fun onItemChildClick(adapter: BaseQuickAdapter<*, *>, view: View, position: Int) {
+            override fun onItemChildClick(adapter: BaseQuickAdapter<*, *>, view: View,
+                    position: Int) {
 
             }
 
-            override fun onItemChildLongClick(adapter: BaseQuickAdapter<*, *>, view: View, position: Int) {
+            override fun onItemChildLongClick(adapter: BaseQuickAdapter<*, *>, view: View,
+                    position: Int) {
 
             }
         })

@@ -1,11 +1,16 @@
 package com.kuyuzhiqi.testdemo;
 
 import android.app.Application;
+import io.flutter.embedding.engine.FlutterEngine;
+import io.flutter.embedding.engine.FlutterEngineCache;
+import io.flutter.embedding.engine.dart.DartExecutor;
+import io.flutter.view.FlutterMain;
 
 public class App extends Application {
 
     public static MsgDisplayListener msgDisplayListener = null;
     public static StringBuilder cacheMsg = new StringBuilder();
+    private FlutterEngine flutterEngine;
 
     //public App() {
     //    super(
@@ -25,6 +30,16 @@ public class App extends Application {
     @Override public void onCreate() {
         super.onCreate();
         initHotfix();
+        flutterEngine = new FlutterEngine(this);
+        FlutterMain.startInitialization(this);
+        // Start executing Dart code to pre-warm the FlutterEngine.
+        flutterEngine.getDartExecutor().executeDartEntrypoint(
+                DartExecutor.DartEntrypoint.createDefault()
+        );
+        // Cache the FlutterEngine to be used by FlutterActivity.
+        FlutterEngineCache
+                .getInstance()
+                .put("kuyu's", flutterEngine);
     }
 
     private void initHotfix() {
