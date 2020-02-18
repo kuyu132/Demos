@@ -53,6 +53,7 @@ class MainActivity : AppCompatActivity() {
                     add("旋转控件")
                     add("Gif")
                     add("lottie animation")
+                    add("加载dex文件")
                 }
 
         mContentAdapter = ContentAdapter(contentList)
@@ -74,18 +75,22 @@ class MainActivity : AppCompatActivity() {
                     10 -> startActivity(Intent(this@MainActivity, CarrouselActivity::class.java))
                     11 -> startActivity(Intent(this@MainActivity, GifActivity::class.java))
                     12 -> startActivity(Intent(this@MainActivity, LottieActivity::class.java))
+                    13 -> startActivity(Intent(this@MainActivity, DexLoadActivity::class.java))
                 }
             }
 
-            override fun onItemLongClick(adapter: BaseQuickAdapter<*, *>, view: View, position: Int) {
+            override fun onItemLongClick(adapter: BaseQuickAdapter<*, *>, view: View,
+                    position: Int) {
 
             }
 
-            override fun onItemChildClick(adapter: BaseQuickAdapter<*, *>, view: View, position: Int) {
+            override fun onItemChildClick(adapter: BaseQuickAdapter<*, *>, view: View,
+                    position: Int) {
 
             }
 
-            override fun onItemChildLongClick(adapter: BaseQuickAdapter<*, *>, view: View, position: Int) {
+            override fun onItemChildLongClick(adapter: BaseQuickAdapter<*, *>, view: View,
+                    position: Int) {
 
             }
         })
