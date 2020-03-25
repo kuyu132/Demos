@@ -1,6 +1,7 @@
 package com.kuyuzhiqi.testdemo;
 
 import android.app.Application;
+import com.kuyuzhiqi.testdemo.test.BaseApplication;
 
 public class App extends Application {
 
