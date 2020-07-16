@@ -1,0 +1,14 @@
+package plugin
+
+import org.gradle.api.Plugin
+import org.gradle.api.Project
+
+class TestGroovy implements Plugin<Project>{
+
+    @Override
+    void apply(Project project) {
+        project.plugins.all {
+            print(it.toString())
+        }
+    }
+}

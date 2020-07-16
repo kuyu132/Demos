@@ -3,9 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Demos.iml" filepath="$PROJECT_DIR$/Demos.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/Demos-app.iml" filepath="$PROJECT_DIR$/app/Demos-app.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/buildSrc/buildSrc.iml" filepath="$PROJECT_DIR$/buildSrc/buildSrc.iml" />
-      <module fileurl="file://$PROJECT_DIR$/xposeddemo/xposeddemo.iml" filepath="$PROJECT_DIR$/xposeddemo/xposeddemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/groovyplugin/groovyplugin.iml" filepath="$PROJECT_DIR$/groovyplugin/groovyplugin.iml" />
     </modules>
   </component>
 </project>
