@@ -1,0 +1,28 @@
+apply plugin: 'groovy'
+apply plugin: 'maven'
+
+dependencies {
+    compileOnly gradleApi()
+    implementation localGroovy()
+
+    implementation "com.android.tools.build:gradle:3.4.1"
+}
+
+sourceSets {
+    main {
+        groovy.srcDirs=['src/main/groovy']
+        resources.srcDirs=['src/main/resources']
+    }
+}
+
+group = 'com.kuyu'
+version = '1.0.0'
+
+// 发布到本地仓库
+uploadArchives {
+    repositories {
+        mavenDeployer {
+            repository(url: uri('../repo'))
+        }
+    }
+}

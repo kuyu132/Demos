@@ -16,10 +16,9 @@ import com.chad.library.adapter.base.BaseViewHolder
 import com.chad.library.adapter.base.listener.SimpleClickListener
 import com.kuyuzhiqi.acrossdemo.ui.FingerPrintActivity
 import com.kuyuzhiqi.testdemo.R
-import com.kuyuzhiqi.testdemo.test.SQwanCore
 import com.tencent.mmkv.MMKV
 import org.androidannotations.annotations.EActivity
-import java.util.*
+import java.util.ArrayList
 
 @EActivity
 class MainActivity : AppCompatActivity() {
@@ -128,9 +127,4 @@ class MainActivity : AppCompatActivity() {
         } else super.onOptionsItemSelected(item)
     }
 
-    override fun onRequestPermissionsResult(requestCode: Int, permissions: Array<out String>,
-            grantResults: IntArray) {
-        super.onRequestPermissionsResult(requestCode, permissions, grantResults)
-        SQwanCore.getInstance().onRequestPermissionsResult(requestCode, permissions, grantResults)
-    }
 }

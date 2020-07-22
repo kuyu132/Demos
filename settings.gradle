@@ -1,2 +1,2 @@
-include ':app', ':groovyplugin'
+include ':app', ':plugin'
 //, ':xposeddemo'
