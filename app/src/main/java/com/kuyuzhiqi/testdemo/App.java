@@ -1,6 +1,7 @@
 package com.kuyuzhiqi.testdemo;
 
 import android.app.Application;
+import com.github.moduth.blockcanary.BlockCanary;
 
 public class App extends Application {
 
@@ -25,6 +26,9 @@ public class App extends Application {
     @Override public void onCreate() {
         super.onCreate();
         initHotfix();
+
+        // 在主进程初始化调用哈
+        //BlockCanary.install(this, new AppBlockCanaryContext()).start();
     }
 
     private void initHotfix() {

@@ -28,6 +28,9 @@ android {
         sourceCompatibility = '1.8'
         targetCompatibility = '1.8'
     }
+    lintOptions {
+        abortOnError false
+    }
 }
 
 dependencies {
@@ -58,6 +61,13 @@ dependencies {
     //Tinker https://github.com/Tencent/tinker
     //    provided('com.tencent.tinker:tinker-android-anno:1.9.1')
     //    compile('com.tencent.tinker:tinker-android-lib:1.9.1')
+
+    // 仅在debug包启用BlockCanary进行卡顿监控和提示的话，可以这么用
+    debugImplementation 'com.github.markzhai:blockcanary-android:1.5.0'
+    releaseImplementation 'com.github.markzhai:blockcanary-no-op:1.5.0'
+
+    implementation 'org.eclipse.paho:org.eclipse.paho.client.mqttv3:1.1.0'
+    implementation 'org.eclipse.paho:org.eclipse.paho.android.service:1.1.1'
 }
 
 

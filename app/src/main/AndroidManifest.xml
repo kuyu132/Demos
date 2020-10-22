@@ -4,9 +4,13 @@
     package="com.kuyuzhiqi.testdemo">
 
     <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
 
     <application
         android:name=".App"
@@ -16,12 +20,13 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".ui.activity.DexLoadActivity"></activity>
-        <activity android:name=".ui.activity.LottieActivity"></activity>
-        <activity android:name=".ui.activity.GifActivity"></activity>
-        <activity android:name=".ui.activity.CarrouselActivity"></activity>
-        <activity android:name=".ui.activity.SVGAActivity"></activity>
-        <activity android:name=".ui.activity.JsonActivity"></activity>
+        <activity android:name=".mqtt.MQTTestActivity"></activity>
+        <activity android:name=".ui.activity.DexLoadActivity" />
+        <activity android:name=".ui.activity.LottieActivity" />
+        <activity android:name=".ui.activity.GifActivity" />
+        <activity android:name=".ui.activity.CarrouselActivity" />
+        <activity android:name=".ui.activity.SVGAActivity" />
+        <activity android:name=".ui.activity.JsonActivity" />
         <activity
             android:name=".ui.activity.MainActivity"
             android:label="@string/app_name"
@@ -32,20 +37,21 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.activity.JetpackDemoActivity"></activity>
-        <activity android:name=".ui.activity.MessengerActivity"></activity>
-        <activity android:name=".ui.activity.ScrollTabActivity2"></activity>
-        <activity android:name=".ui.activity.ScrollActivity"></activity>
-        <activity android:name=".ui.activity.CoordinatorActivity"></activity>
-        <activity android:name=".ui.activity.AIDLTestActivity"></activity>
+        <activity android:name=".ui.activity.JetpackDemoActivity" />
+        <activity android:name=".ui.activity.MessengerActivity" />
+        <activity android:name=".ui.activity.ScrollTabActivity2" />
+        <activity android:name=".ui.activity.ScrollActivity" />
+        <activity android:name=".ui.activity.CoordinatorActivity" />
+        <activity android:name=".ui.activity.AIDLTestActivity" />
 
         <service android:name=".service.BankService" />
         <service
             android:name=".service.MessengerService"
             android:process=":remote" />
+        <service android:name="org.eclipse.paho.android.service.MqttService" />
 
-        <activity android:name=".ui.activity.LoginActivity"></activity>
-        <activity android:name=".ui.activity.MMKVActivity"></activity>
+        <activity android:name=".ui.activity.LoginActivity" />
+        <activity android:name=".ui.activity.MMKVActivity" />
         <activity android:name="com.kuyuzhiqi.acrossdemo.ui.FingerPrintActivity" />
         <activity android:name=".ui.activity.PathAnimationActivity" />
     </application>

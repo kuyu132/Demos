@@ -12,7 +12,11 @@ public class Test implements Plugin<Project>{
     project.plugins.all {
         println("kuyuzhqi:"+it)
         if(it instanceof LibraryPlugin){
-
+            android.libraryVariants.all{variant->
+                variant.outputs.all{ output->
+                    task
+                }
+            }
         }else if(it instanceof AppPlugin){
 
         }

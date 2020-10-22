@@ -1,7 +1,16 @@
 package com.kuyuzhiqi.testdemo.ui.activity
 
+import android.Manifest
+import android.content.Context
 import android.content.Intent
+import android.content.pm.PackageManager
+import android.net.Uri
+import android.os.Build
 import android.os.Bundle
+import android.os.Looper
+import android.os.PowerManager
+import android.provider.Settings
+import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
@@ -9,6 +18,7 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
+import androidx.core.app.ActivityCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.chad.library.adapter.base.BaseQuickAdapter
@@ -16,9 +26,15 @@ import com.chad.library.adapter.base.BaseViewHolder
 import com.chad.library.adapter.base.listener.SimpleClickListener
 import com.kuyuzhiqi.acrossdemo.ui.FingerPrintActivity
 import com.kuyuzhiqi.testdemo.R
+import com.kuyuzhiqi.testdemo.mqtt.MQTTestActivity
+import com.kuyuzhiqi.testdemo.utils.LooperPrinter
+import com.kuyuzhiqi.testdemo.utils.ShellUtils
+import com.kuyuzhiqi.testdemo.utils.ThreadUtils
 import com.tencent.mmkv.MMKV
 import org.androidannotations.annotations.EActivity
 import java.util.ArrayList
+import java.util.Timer
+import java.util.TimerTask
 
 @EActivity
 class MainActivity : AppCompatActivity() {
@@ -26,6 +42,7 @@ class MainActivity : AppCompatActivity() {
     private var tv_hello: TextView? = null
     private var rc_content: RecyclerView? = null
     private var mContentAdapter: ContentAdapter? = null
+    val REQUEST_CODE = 101
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -54,6 +71,7 @@ class MainActivity : AppCompatActivity() {
                     add("Gif")
                     add("lottie animation")
                     add("加载dex文件")
+                    add("mqtt")
                 }
 
         mContentAdapter = ContentAdapter(contentList)
@@ -76,22 +94,20 @@ class MainActivity : AppCompatActivity() {
                     11 -> startActivity(Intent(this@MainActivity, GifActivity::class.java))
                     12 -> startActivity(Intent(this@MainActivity, LottieActivity::class.java))
                     13 -> startActivity(Intent(this@MainActivity, DexLoadActivity::class.java))
+                    14 -> startActivity(Intent(this@MainActivity, MQTTestActivity::class.java))
                 }
             }
 
             override fun onItemLongClick(adapter: BaseQuickAdapter<*, *>, view: View,
-                    position: Int) {
-
+                                         position: Int) {
             }
 
             override fun onItemChildClick(adapter: BaseQuickAdapter<*, *>, view: View,
-                    position: Int) {
-
+                                          position: Int) {
             }
 
             override fun onItemChildLongClick(adapter: BaseQuickAdapter<*, *>, view: View,
-                    position: Int) {
-
+                                              position: Int) {
             }
         })
         object : Thread() {
@@ -99,6 +115,40 @@ class MainActivity : AppCompatActivity() {
                 tv_hello!!.text = "线程改变tv值"
             }
         }.start()
+
+        //判断是否在doze白名单中，如果不是的话，则申请
+        //1.manifest配置；2.权限动态申请
+        val pm = getSystemService(Context.POWER_SERVICE) as PowerManager
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            val result = pm.isIgnoringBatteryOptimizations(this.packageName)
+            Toast.makeText(this, "doze白名单:" + result, Toast.LENGTH_SHORT).show()
+            if (!result) {
+                val intent = Intent(Settings.ACTION_REQUEST_IGNORE_BATTERY_OPTIMIZATIONS)
+                intent.data = Uri.parse("package:$packageName")
+                startActivity(intent)
+            }
+        }
+
+        Looper.getMainLooper().setMessageLogging(LooperPrinter())
+
+        val stackTraces = Looper.getMainLooper().thread.stackTrace
+//        for (stack in stackTraces){
+//            Log.i("kuyu","" + stack.lineNumber+" || "+stack.className +" || "+stack.methodName )
+//        }
+
+        val isRoot = ShellUtils.checkRootPermission()
+        val threadUtils = ThreadUtils()
+        threadUtils.printInfo(isRoot)
+        val task = object : TimerTask() {
+            override fun run() {
+                Log.i("kuyu", "延时任务")
+                threadUtils.printInfo(isRoot)
+            }
+        }
+
+        val timer = Timer()
+        timer.schedule(task, 300)
+
     }
 
     internal inner class ContentAdapter(data: List<String>) :
@@ -127,4 +177,14 @@ class MainActivity : AppCompatActivity() {
         } else super.onOptionsItemSelected(item)
     }
 
+    override fun onRequestPermissionsResult(requestCode: Int, permissions: Array<out String>,
+                                            grantResults: IntArray) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults)
+        if (requestCode == REQUEST_CODE) {
+            for (i in grantResults) {
+//                if(i == PackageManager.PERMISSION_GRANTED)
+                Toast.makeText(this, "" + i, Toast.LENGTH_SHORT).show()
+            }
+        }
+    }
 }
