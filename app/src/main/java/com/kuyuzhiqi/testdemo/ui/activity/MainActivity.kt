@@ -1,9 +1,7 @@
 package com.kuyuzhiqi.testdemo.ui.activity
 
-import android.Manifest
 import android.content.Context
 import android.content.Intent
-import android.content.pm.PackageManager
 import android.net.Uri
 import android.os.Build
 import android.os.Bundle
@@ -18,7 +16,6 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
-import androidx.core.app.ActivityCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.chad.library.adapter.base.BaseQuickAdapter
@@ -30,11 +27,8 @@ import com.kuyuzhiqi.testdemo.mqtt.MQTTestActivity
 import com.kuyuzhiqi.testdemo.utils.LooperPrinter
 import com.kuyuzhiqi.testdemo.utils.ShellUtils
 import com.kuyuzhiqi.testdemo.utils.ThreadUtils
-import com.tencent.mmkv.MMKV
 import org.androidannotations.annotations.EActivity
-import java.util.ArrayList
-import java.util.Timer
-import java.util.TimerTask
+import java.util.*
 
 @EActivity
 class MainActivity : AppCompatActivity() {
@@ -49,9 +43,6 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         val toolbar = findViewById<View>(R.id.toolbar) as Toolbar
         setSupportActionBar(toolbar)
-
-        val dir = MMKV.initialize(this)
-        Toast.makeText(this, dir, Toast.LENGTH_LONG).show()
 
         tv_hello = findViewById(R.id.tv_hello)
         rc_content = findViewById(R.id.rc_content)
@@ -72,6 +63,7 @@ class MainActivity : AppCompatActivity() {
                     add("lottie animation")
                     add("加载dex文件")
                     add("mqtt")
+                    add("xlog")
                 }
 
         mContentAdapter = ContentAdapter(contentList)
@@ -85,7 +77,7 @@ class MainActivity : AppCompatActivity() {
                     2 -> startActivity(Intent(this@MainActivity, MMKVActivity::class.java))
                     3 -> startActivity(Intent(this@MainActivity, ScrollActivity::class.java))
                     4 -> startActivity(Intent(this@MainActivity, ScrollTabActivity2::class.java))
-                    5 -> startActivity(Intent(this@MainActivity, FingerPrintActivity::class.java))
+                    5 -> application.startActivity(Intent(this@MainActivity, FingerPrintActivity::class.java))
                     6 -> startActivity(Intent(this@MainActivity, PathAnimationActivity::class.java))
                     7 -> startActivity(Intent(this@MainActivity, MessengerActivity::class.java))
                     8 -> startActivity(Intent(this@MainActivity, JsonActivity::class.java))
@@ -95,6 +87,7 @@ class MainActivity : AppCompatActivity() {
                     12 -> startActivity(Intent(this@MainActivity, LottieActivity::class.java))
                     13 -> startActivity(Intent(this@MainActivity, DexLoadActivity::class.java))
                     14 -> startActivity(Intent(this@MainActivity, MQTTestActivity::class.java))
+                    15 -> startActivity(Intent(this@MainActivity, XLogActivity::class.java))
                 }
             }
 
