@@ -64,6 +64,8 @@ class MainActivity : AppCompatActivity() {
                     add("加载dex文件")
                     add("mqtt")
                     add("xlog")
+                    add("logan")
+                    add("coral")
                 }
 
         mContentAdapter = ContentAdapter(contentList)
@@ -88,6 +90,8 @@ class MainActivity : AppCompatActivity() {
                     13 -> startActivity(Intent(this@MainActivity, DexLoadActivity::class.java))
                     14 -> startActivity(Intent(this@MainActivity, MQTTestActivity::class.java))
                     15 -> startActivity(Intent(this@MainActivity, XLogActivity::class.java))
+                    16 -> startActivity(Intent(this@MainActivity, LoganActivity::class.java))
+                    17 -> startActivity(Intent(this@MainActivity, CoralActivity::class.java))
                 }
             }
 

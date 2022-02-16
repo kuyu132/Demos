@@ -21,6 +21,12 @@
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
         <activity
+            android:name=".ui.activity.CoralActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.activity.LoganActivity"
+            android:exported="true" />
+        <activity
             android:name=".ui.activity.XLogActivity"
             android:exported="true" />
         <activity android:name=".mqtt.MQTTestActivity" />
