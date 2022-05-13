@@ -88,7 +88,11 @@ dependencies {
     implementation 'com.dianping.android.sdk:logan:1.2.4'
 //    implementation(name: 'coral-1.0.0.10', ext: 'aar')
 //    implementation(name: 'coral-1.0.0.19', ext: 'aar')
-    implementation(name: 'coral-1.0.0.19', ext: 'aar')
+//    implementation(name: 'coral-1.0.0.19', ext: 'aar')
+
+    implementation 'com.facebook.yoga.android:yoga-layout:1.19.0'
+    implementation 'com.facebook.soloader:soloader:0.10.3'
+    implementation 'com.facebook.fbjni:fbjni:0.3.0'
 }
 
 

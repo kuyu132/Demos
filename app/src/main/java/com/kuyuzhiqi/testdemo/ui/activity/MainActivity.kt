@@ -66,6 +66,7 @@ class MainActivity : AppCompatActivity() {
                     add("xlog")
                     add("logan")
                     add("coral")
+                    add("yoga")
                 }
 
         mContentAdapter = ContentAdapter(contentList)
@@ -92,6 +93,7 @@ class MainActivity : AppCompatActivity() {
                     15 -> startActivity(Intent(this@MainActivity, XLogActivity::class.java))
                     16 -> startActivity(Intent(this@MainActivity, LoganActivity::class.java))
                     17 -> startActivity(Intent(this@MainActivity, CoralActivity::class.java))
+                    18 -> startActivity(Intent(this@MainActivity, YogaActivity::class.java))
                 }
             }
 

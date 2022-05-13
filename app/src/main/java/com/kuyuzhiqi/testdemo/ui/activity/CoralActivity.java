@@ -5,11 +5,11 @@ import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.kuyuzhiqi.testdemo.R;
-import com.tencent.coral.CoralInitConfig;
-import com.tencent.coral.CoralManager;
-import com.tencent.coral.log.CoralLog;
-import com.tencent.coral.log.LogConfig;
-import com.tencent.coral.log.LogLevel;
+//import com.tencent.coral.CoralInitConfig;
+//import com.tencent.coral.CoralManager;
+//import com.tencent.coral.log.CoralLog;
+//import com.tencent.coral.log.LogConfig;
+//import com.tencent.coral.log.LogLevel;
 
 public class CoralActivity extends AppCompatActivity {
 
@@ -27,27 +27,27 @@ public class CoralActivity extends AppCompatActivity {
     }
 
     private void initSDK() {
-        LogConfig logConfig = new LogConfig();
-        logConfig.level = LogLevel.kInfo.getCode();
-        String logDir = LogConfig.getDefaultLogDir(this);
-        logConfig.logDir = logDir;
-        logConfig.compress = false;
-        logConfig.encrypt = true;
-        logConfig.enableLogToFile = true;
-        logConfig.enableLogToConsole = true;
-        CoralInitConfig coralInitConfig = new CoralInitConfig.Builder()
-                .logConfig(logConfig)
-                .build();
-        CoralManager.init(this, coralInitConfig);
+//        LogConfig logConfig = new LogConfig();
+//        logConfig.level = LogLevel.kInfo.getCode();
+//        String logDir = LogConfig.getDefaultLogDir(this);
+//        logConfig.logDir = logDir;
+//        logConfig.compress = false;
+//        logConfig.encrypt = true;
+//        logConfig.enableLogToFile = true;
+//        logConfig.enableLogToConsole = true;
+//        CoralInitConfig coralInitConfig = new CoralInitConfig.Builder()
+//                .logConfig(logConfig)
+//                .build();
+//        CoralManager.init(this, coralInitConfig);
     }
 
     private void initViews() {
         findViewById(R.id.btn_test_log).setOnClickListener(v -> {
             flag = true;
-            for (int i = 0; i < 100_0000; i++) {
-                CoralLog.w("coral", msg_512);
-            }
-            CoralLog.flushFileLog();
+//            for (int i = 0; i < 100_0000; i++) {
+//                CoralLog.w("coral", msg_512);
+//            }
+//            CoralLog.flushFileLog();
         });
         findViewById(R.id.btn_stop_test).setOnClickListener(v -> {
             flag = false;

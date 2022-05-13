@@ -21,6 +21,11 @@
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
         <activity
+            android:name=".ui.activity.YogaActivity"
+            android:exported="true"
+            android:label="@string/title_activity_yoga"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
             android:name=".ui.activity.CoralActivity"
             android:exported="true" />
         <activity
